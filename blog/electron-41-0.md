@@ -65,7 +65,7 @@ This was added in Electron 41 by [#49586](https://github.com/electron/electron/p
   - [Node 24.13.0 blog post](https://nodejs.org/en/blog/release/v24.13.0)
   - [Node 24.12.0 blog post](https://nodejs.org/en/blog/release/v24.12.0)
 
-- V8 `14.6`
+- V8 `14.4`
   - [V8 roll increment](https://chromium.googlesource.com/v8/v8.git/+/3f4b2d428486d982bf51d7c0487adcd9f73f5fd8)
 
 Electron 41 upgrades Chromium from `144.0.7559.60` to `146.0.7680.65`, Node.js from `v24.11.1` to `v24.14.0`, and V8 from `14.4` to `14.6`.
@@ -78,11 +78,11 @@ Electron 41 upgrades Chromium from `144.0.7559.60` to `146.0.7680.65`, Node.js f
 - Added a `reason` property to the `Notification` `'closed'` event on Windows to allow developers to know the reason the notification was dismissed. [#50029](https://github.com/electron/electron/pull/50029) <sup>(Also in [40](https://github.com/electron/electron/pull/50030))</sup>
 - Added an `usePrinterDefaultPageSize` option to `webContents.print()` to allow using the printer's default page size. [#49812](https://github.com/electron/electron/pull/49812)
 - Added support for WebSocket authentication through the `login` event on `webContents`. [#48512](https://github.com/electron/electron/pull/48512) <sup>(Also in [39](https://github.com/electron/electron/pull/49065), [40](https://github.com/electron/electron/pull/49064))</sup>
-- Added support for the Node.js [`--experimental-transform-types`](https://nodejs.org/docs/latest-v24.x/api/cli.html#--experimental-transform-types) flag. [#49882](https://github.com/electron/electron/pull/49882) <sup>(Also in [39](https://github.com/electron/electron/pull/49881), [40](https://github.com/electron/electron/pull/49883))</sup>
+- Added support for the Node.js [`--experimental-transform-types`](https://nodejs.org/docs/latest-v22.x/api/cli.html#--experimental-transform-types) flag. [#49882](https://github.com/electron/electron/pull/49882) <sup>(Also in [39](https://github.com/electron/electron/pull/49881), [40](https://github.com/electron/electron/pull/49883))</sup>
 - Added support for `long-animation-frame` script attribution (via `--enable-features=AlwaysLogLOAFURL`). [#49773](https://github.com/electron/electron/pull/49773) <sup>(Also in [39](https://github.com/electron/electron/pull/49771), [40](https://github.com/electron/electron/pull/49772))</sup>
 - Added the ability to disable auto-focusing of `WebContents` on navigation using `webPreferences.focusOnNavigation`. [#49511](https://github.com/electron/electron/pull/49511) <sup>(Also in [40](https://github.com/electron/electron/pull/49512))</sup>
 - Irrelevant errors from the Chromium DevTools frontend are now silenced in the main process. [#49292](https://github.com/electron/electron/pull/49292) <sup>(Also in [40](https://github.com/electron/electron/pull/49359))</sup>
-- Enable V8 trap handlers for WASM behind `WasmTrapHandlers` [fuse](https://www.electronjs.org/docs/latest/tutorial/fuses). [#49839](https://github.com/electron/electron/pull/49839)
+- Enabled V8 trap handlers for WASM behind `WasmTrapHandlers` [fuse](https://www.electronjs.org/docs/latest/tutorial/fuses). [#49839](https://github.com/electron/electron/pull/49839)
 - Extended actions support for Windows notifications to include buttons, select dropdowns, and replies. [#49787](https://github.com/electron/electron/pull/49787) <sup>(Also in [40](https://github.com/electron/electron/pull/49786))</sup>
 
 ### Breaking Changes
